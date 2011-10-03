@@ -27,8 +27,9 @@ Library
   Build-Depends: 
                    base>4, mtl>2, directory, filepath,
                    cmdargs
-  Exposed-Modules: 
+  Exposed-Modules:      
                    HEP.Automation.FeynRules.Type
+                   HEP.Automation.FeynRules.ProgType
                    HEP.Automation.FeynRules.Job
                    HEP.Automation.FeynRules.Command
   Other-Modules: 
