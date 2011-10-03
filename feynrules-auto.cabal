@@ -8,7 +8,7 @@ Author:		Ian-Woo Kim
 Maintainer: 	Ian-Woo Kim <ianwookim@gmail.com>
 Build-Type: 	Simple
 Cabal-Version:  >= 1.8
-data-files:     
+data-files:     template/*.m.st
 
 
 Executable feynrules-auto
@@ -26,13 +26,15 @@ Library
   ghc-prof-options: -caf-all -auto-all
   Build-Depends: 
                    base>4, mtl>2, directory, filepath,
-                   cmdargs
+                   cmdargs, configparser>0.0.2, parsec>3, 
+                   HStringTemplate, HStringTemplateHelpersIW
   Exposed-Modules:      
                    HEP.Automation.FeynRules.Type
                    HEP.Automation.FeynRules.ProgType
                    HEP.Automation.FeynRules.Job
                    HEP.Automation.FeynRules.Command
+                   HEP.Automation.FeynRules.Config
   Other-Modules: 
-
+                   Paths_feynrules_auto
  
 		 
